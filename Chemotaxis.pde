@@ -21,11 +21,11 @@ void draw(){
    
    nLoop();
  }
+ loop();
 for(int i = 0; i < sqa.length; i++){
    sqa[i].show();
    sqa[i].move();
  }
- loop();
 }
 
 public class square {
