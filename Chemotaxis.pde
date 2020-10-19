@@ -5,7 +5,7 @@ void setup(){
   frameRate(60);
   size(500,600);
  rectMode(CENTER); 
- sqa = new square[20];
+ sqa = new square[50];
  for(int i = 0; i < sqa.length; i++){
    sqa[i]= new square((int)(Math.random()*300) +100,(int)(Math.random()*300) +100, (int)(Math.random()*50) +25);
    
