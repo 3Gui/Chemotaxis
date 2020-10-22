@@ -5,9 +5,9 @@ void setup(){
   frameRate(60);
   size(500,600);
  rectMode(CENTER); 
- sqa = new square[20];
+ sqa = new square[50];
  for(int i = 0; i < sqa.length; i++){
-   sqa[i]= new square((int)(Math.random()*350) +100,(int)(Math.random()*350) +100, (int)(Math.random()*50) +25);
+   sqa[i]= new square((int)(Math.random()*350) +100,(int)(Math.random()*350) +100, (int)(Math.random()*50) +25, color((int)(Math.random()*155 )+100,(int)(Math.random()*155) +100,(int)(Math.random()*155) +100));
    
  }
 }
@@ -52,18 +52,18 @@ public class square {
     mCol = color((int)(Math.random()*155 )+100,(int)(Math.random()*155) +100,(int)(Math.random()*155) +100);
     
   }
-  square(int x, int y, int s){
+  square(int x, int y, int s, int c){
     mSize = s;
     mY = y;
     mX = x;
-    mCol = color((int)(Math.random()*155 )+100,(int)(Math.random()*155) +100,(int)(Math.random()*155) +100);
+    mCol = c;
   }
   
   
   
   void show(){
     
-    fill(mCol);
+    fill(mCol,180);
     pushMatrix();
     translate(mX , mY); 
     rotate(rot);
